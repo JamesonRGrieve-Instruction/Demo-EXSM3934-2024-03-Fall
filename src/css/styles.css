@@ -7,3 +7,7 @@ main {
 footer {
     background-color: aqua;
 }
+
+header, footer {
+    border: 5px solid black;
+}
