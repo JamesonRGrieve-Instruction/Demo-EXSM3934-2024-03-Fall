@@ -12,16 +12,18 @@ header {
     border: 5px solid black;
     padding: 15px;
 }
-
+main {
+    font-size: 3rem;
+}
 aside {
-    width: 110px;
+    width: 20rem;
     height: 210px;
     background-color: chartreuse;
     border: 5px solid yellowgreen;
 }
 #box1 {
     background-color: red;
-    width: 100px;
+    width: 50%;
     height: 100px;
     /* margin: 10px; */
     border: 5px solid black;
@@ -31,7 +33,7 @@ aside {
 
 #box2 {
     background-color: blue;
-    width: 100px;
+    width: 75%;
     height: 100px;
     /* margin: 10px; */
     border: 5px solid black;
