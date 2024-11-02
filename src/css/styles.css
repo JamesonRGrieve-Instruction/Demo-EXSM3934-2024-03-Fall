@@ -1,60 +1,70 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 body {
-    margin: 0;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-style: italic;
-    text-decoration: underline;
-    text-transform: uppercase;
-    letter-spacing: 0.5rem;
-    line-height: 5rem;
-    text-align: center;
+  margin: 0;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  line-height: 5rem;
+  text-align: center;
 }
+
 #header {
-    font-family: Impact, serif;
+  font-family: Impact, serif;
 }
-body>.header {
-    font-family: cursive !important; 
-    /* Do not use !important unless absolutely necessary, there is usually a better way. */
+
+body > .header {
+  font-family: cursive !important;
+
+  /* Do not use !important unless absolutely necessary, there is usually a better way. */
 }
 
 h1 {
-    margin: 0;
+  margin: 0;
 }
+
 header {
-    margin: 10px;
-    border: 5px solid black;
-    padding: 15px;
+  margin: 10px;
+  border: 5px solid black;
+  padding: 15px;
 }
+
 main {
-    font-size: 3rem;
+  font-size: 3rem;
 }
+
 aside {
-    width: 20rem;
-    height: 210px;
-    background-color: chartreuse;
-    border: 5px solid yellowgreen;
+  /* width: 20rem;
+    height: 210px; */
+  background-color: chartreuse;
+  border: 5px solid yellowgreen;
+  display: flex;
 }
+
 #box1 {
-    background-color: red;
-    width: 50%;
-    height: 100px;
-    /* margin: 10px; */
-    border: 5px solid black;
-    
-    padding: 15px;
+  background-color: red;
+  width: 50%;
+  height: 100px;
+
+  /* margin: 10px; */
+  border: 5px solid black;
+  padding: 15px;
 }
 
 #box2 {
-    background-color: blue;
-    width: 75%;
-    height: 100px;
-    /* margin: 10px; */
-    border: 5px solid black;
-    padding: 15px;
-} 
+  background-color: blue;
+  width: 75%;
+  height: 100px;
+
+  /* margin: 10px; */
+  border: 5px solid black;
+  padding: 15px;
+}
 
 /* header {
     background-color: salmon;
