@@ -12,9 +12,16 @@ body {
     line-height: 5rem;
     text-align: center;
 }
+#header {
+    font-family: Impact, serif;
+}
+body>.header {
+    font-family: cursive !important; 
+    /* Do not use !important unless absolutely necessary, there is usually a better way. */
+}
+
 h1 {
     margin: 0;
-    font-family: cursive;
 }
 header {
     margin: 10px;
