@@ -37,15 +37,32 @@ header {
 main {
   font-size: 3rem;
 }
-
+p::first-letter {
+  font-size: 5rem;
+  font-family: cursive;
+}
+li:hover {
+  background-color: chartreuse;
+}
 aside {
   /* width: 20rem;
     height: 210px; */
-  background-color: chartreuse;
+  /* background-image: url(https://cdn.pixabay.com/photo/2021/07/24/07/23/chow-chow-6488846_1280.jpg); */
+  background: url(../img/doggo.jpg), rgba(0, 0, 0, 0.65);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+
+  /* A nice balance is to use cover+center, which will clip all 4 sides equally, instead of only the right and bottom. */
+  background-size: cover;
+  background-position: center;
+
   border: 5px solid yellowgreen;
   display: flex;
+  color: white;
 }
-
+aside > div {
+  width: 50%;
+}
 #box1 {
   background-color: red;
   width: 50%;
@@ -64,6 +81,10 @@ aside {
   /* margin: 10px; */
   border: 5px solid black;
   padding: 15px;
+}
+
+img {
+  width: 100%;
 }
 
 /* header {
