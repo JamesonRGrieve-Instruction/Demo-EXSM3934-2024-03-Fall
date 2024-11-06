@@ -60,8 +60,11 @@ aside {
   display: flex;
   color: white;
 }
-aside > div {
-  width: 50%;
+aside > div:first-child {
+  width: 35%;
+}
+aside > div:last-child {
+  width: 65%;
 }
 #box1 {
   background-color: red;
