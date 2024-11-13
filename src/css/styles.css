@@ -84,7 +84,7 @@ footer ul {
   display: flex;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1200px) {
   header nav.navigation {
     display: block;
   }
@@ -103,14 +103,12 @@ footer ul {
     margin: 0.8rem 1rem;
   }
   main section:first-of-type {
-    display: flex;
+    display: grid;
+    grid-template-columns: 50% 50%;
   }
-  main section:first-of-type div:first-of-type {
-    width: 50%;
-  }
+
   #landscape-image {
     display: block;
-    width: 50%;
     height: 16rem;
   }
 
