@@ -5,6 +5,7 @@
 body {
   margin: 0;
   background-color: #cfbff7;
+  margin-bottom: 3rem;
 }
 
 ul {
@@ -12,8 +13,14 @@ ul {
   padding: 0;
 }
 
+header {
+  background-color: #8b80f9;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
 header h1 {
   text-align: center;
+  margin: 0;
 }
 header img {
   width: 2rem;
@@ -52,6 +59,8 @@ main section:first-of-type div:first-of-type a {
   background-position: center;
   background-repeat: no-repeat;
   display: none; /* Mobile-first, hide the image that's only on desktop. */
+  margin-left: 1rem;
+  border-radius: 1rem;
 }
 
 main section:last-of-type {
@@ -64,8 +73,52 @@ main section:last-of-type ul li {
 
 footer {
   background-color: #8b80f9;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2rem;
 }
 footer ul {
   margin: 0 auto;
   display: flex;
+}
+
+@media screen and (min-width: 600px) {
+  header nav.navigation {
+    display: block;
+  }
+  header {
+    display: flex;
+    padding: 0 1rem;
+  }
+  header h1 {
+    margin: 1rem 0;
+  }
+  header nav ul {
+    margin-left: 200%;
+    display: flex;
+  }
+  header nav ul li {
+    margin: 0.8rem 1rem;
+  }
+  main section:first-of-type {
+    display: flex;
+  }
+  main section:first-of-type div:first-of-type {
+    width: 50%;
+  }
+  #landscape-image {
+    display: block;
+    width: 50%;
+    height: 16rem;
+  }
+
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  main section:last-of-type ul {
+    display: flex;
+  }
 }
