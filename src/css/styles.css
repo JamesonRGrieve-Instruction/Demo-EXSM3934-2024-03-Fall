@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  margin: 0;
+}
+body > div {
+  display: flex;
+}
+aside {
+  width: 40%;
+  text-align: center;
+}
+aside a {
+  color: chartreuse;
+}
+aside a:visited {
+  color: brown;
+}
+aside a:hover {
+  color: cyan;
+}
+
+aside img {
+  width: 100%;
+}
+main {
+  width: 60%;
+}
+aside,
+main {
+  padding: 2rem;
+}
+main ol li:hover {
+  background-color: aliceblue;
+  cursor: crosshair;
+}
