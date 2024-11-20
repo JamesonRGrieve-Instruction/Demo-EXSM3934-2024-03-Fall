@@ -44,13 +44,22 @@ header nav {
   left: 0;
   top: 0;
   bottom: 0;
-  width: 10%;
+  width: 60%;
 }
+header nav ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+header nav ul li {
+  padding: 1rem;
+}
+
 body:not(.visible-nav) header nav {
   display: none;
 }
 body.visible-nav {
-  margin-left: 10%;
+  margin-left: 60%;
 }
 
 main {
@@ -119,12 +128,17 @@ footer ul {
   header h1 {
     margin: 1rem 0;
   }
-  header nav ul {
-    margin-left: 200%;
-    display: flex;
+
+  header nav {
+    width: 10%;
   }
-  header nav ul li {
-    margin: 0.8rem 1rem;
+  body.visible-nav {
+    margin-left: 10%;
+  }
+
+  header nav ul li:hover {
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.2);
   }
   main section:first-of-type {
     display: grid;
@@ -142,5 +156,15 @@ footer ul {
   }
   main section:last-of-type ul {
     display: flex;
+  }
+
+  footer,
+  footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer ul {
+    gap: 1rem;
   }
 }
