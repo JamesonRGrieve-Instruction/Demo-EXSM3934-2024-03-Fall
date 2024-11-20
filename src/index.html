@@ -5,35 +5,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Full Stack Web Development Front End Template</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <!-- <link rel="stylesheet" href="css/styles.css"> -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            purple: {
+              300: "#cfbff7",
+              500: "#8b80f9"
+            }
+          }
+        }
+      }
+    }
+  </script>
 </head>
 
-<body>
-  <header>
+<body class="margin-0 bg-purple-300 mb-12">
+  <header class="bg-purple-500 py-4 mb-4 flex">
     <a href="#" class="toggle">≡</a>
-    <h1><img src="img/logo.webp" alt="My Cool Web App Logo">My Cool Web App</h1>
+    <h1 class="flex"><img class="w-8 h-fit" src="img/logo.webp" alt="My Cool Web App Logo">My Cool Web App</h1>
     <div>
     </div>
     <nav class="navigation">
-      <ul>
+      <ul class="flex">
         <li><a href="#">Store</a></li>
         <li><a href="#">Blog</a></li>
         <li><a href="#">Community</a></li>
       </ul>
     </nav>
   </header>
-  <main>
-    <section>
-      <div>
-        <h2>Call to Action!</h2>
-        <a href="#">Click Me</a>
+  <main class="my-0 mx-4">
+    <section class="flex text-center bg-pink-200 rounded-xl p-8 text-center">
+      <div class="w-2/5 flex flex-col">
+        <h2 class="mt-8 mb-12">Call to Action!</h2>
+        <a href="#" class="bg-cyan-200 p-4 rounded-lg block">Click Me</a>
       </div>
-      <div id="landscape-image"></div>
+      <div class="w-3/5" id="landscape-image"></div>
 
     </section>
     <section>
-      <h2>Product Features</h2>
-      <ul>
+      <h2 class="text-center">Product Features</h2>
+      <ul class="flex">
         <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
           dolore magna
           aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -58,8 +73,8 @@
       </ul>
     </section>
   </main>
-  <footer>
-    <ul>
+  <footer class="flex justify-center align-center fixed bottom-0 left-0 right-0 height-8">
+    <ul class="flex justify-center align-center gap-4">
       <li><a href="#">Contact Us</a></li>
       <li>|</li>
       <li><a href="#">About Us</a></li>
