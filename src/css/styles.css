@@ -22,13 +22,19 @@ header {
   padding: 1rem 0;
   margin-bottom: 1rem;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 30%;
+}
+header > a {
+  flex-basis: 40%;
 }
 header h1 {
   text-align: center;
   margin: 0;
-  width: 50%;
+  flex-basis: 1;
+}
+header > div {
+  flex-basis: 40%;
 }
 header img {
   width: 2rem;
